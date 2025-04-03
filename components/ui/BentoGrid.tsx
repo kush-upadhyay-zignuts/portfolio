@@ -281,6 +281,7 @@ export const BentoGridItem = ({
     const text = "kushupadhyay1810@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
+     setTimeout(() => setCopied(false), 2000);
      
   };
 
