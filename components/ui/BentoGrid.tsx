@@ -277,22 +277,12 @@ export const BentoGridItem = ({
     },
   };
 
-  // const handleCopy = () => {
-  //   const text = "kushupadhyay1810@gmail.com";
-  //   navigator.clipboard.writeText(text);
-  //   setCopied(true);
-  //    setTimeout(() => setCopied(false), 2000);
-  // };
-
-  const handleCopy = (): void => {
-  const text: string = "kushupadhyay1810@gmail.com";
-  navigator.clipboard.writeText(text).then(() => {
+  const handleCopy = () => {
+    const text = "kushupadhyay1810@gmail.com";
+    navigator.clipboard.writeText(text);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  }).catch((error) => {
-    console.error("Failed to copy text:", error);
-  });
-};
+     
+  };
 
   return (
     <div
