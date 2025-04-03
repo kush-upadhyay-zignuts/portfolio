@@ -269,7 +269,7 @@ export const BentoGridItem = ({
   }, []);
 
   const defaultOptions = {
-    loop: copied,
+    loop: false, 
     autoplay: copied,
     animationData: animationData,
     rendererSettings: {
